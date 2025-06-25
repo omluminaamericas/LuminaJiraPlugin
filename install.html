@@ -7,40 +7,17 @@
     <style>
         body { font-family: Arial, sans-serif; text-align: center; padding: 50px; }
         .message { margin: 20px; }
-        .button { padding: 10px 20px; background-color: #36b37e; color: white; text-decoration: none; border-radius: 4px; }
-        .error { color: #e03c31; }
+        .button { padding: 10px 20px; background-color: #36b37e; color: white; text-decoration: none; border-radius: 4px; margin: 5px; }
     </style>
 </head>
 <body>
     <h1>Lumina Jira Plugin Installer</h1>
-    <div id="message" class="message">
-        Checking Tampermonkey installation...
+    <div class="message">
+        <p>Welcome to the Lumina Jira Plugin installer!</p>
+        <p>If you don't have Tampermonkey installed, please install it first by clicking the button below. Then, install the Lumina Jira Plugin.</p>
+        <a href="https://www.tampermonkey.net/?ext=dhdg&update=true" target="_blank" class="button">Install Tampermonkey</a>
+        <br>
+        <a href="https://raw.githubusercontent.com/omluminaamericas/LuminaJiraPlugin/main/LuminaJiraPlugin.user.js" class="button">Install Lumina Jira Plugin</a>
     </div>
-
-    <script>
-        // Función para detectar si Tampermonkey está instalado
-        function detectTampermonkey() {
-            if (typeof GM_info !== 'undefined' || typeof GM === 'object' && GM.info) {
-                // Tampermonkey está instalado
-                document.getElementById('message').innerHTML = `
-                    <p>Tampermonkey is installed!</p>
-                    <p>Click the button below to install the Lumina Jira Plugin script:</p>
-                    <a href="https://raw.githubusercontent.com/DevFizu/LuminaJiraPlugin/main/LuminaJiraPlugin.user.js" class="button">Install Script</a>
-                `;
-            } else {
-                // Tampermonkey no está instalado
-                document.getElementById('message').innerHTML = `
-                    <p class="error">Tampermonkey is not detected!</p>
-                    <p>Please install Tampermonkey to use this plugin:</p>
-                    <a href="https://www.tampermonkey.net/?ext=dhdg&update=true" target="_blank" class="button">Install Tampermonkey</a>
-                    <p>After installation, return to this page and click the install link below:</p>
-                    <a href="https://raw.githubusercontent.com/DevFizu/LuminaJiraPlugin/main/LuminaJiraPlugin.user.js" class="button">Install Script</a>
-                `;
-            }
-        }
-
-        // Ejecutar la detección al cargar la página
-        window.addEventListener('load', detectTampermonkey);
-    </script>
 </body>
 </html>

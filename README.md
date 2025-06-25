@@ -60,7 +60,7 @@ To use this plugin enter the [Install Page](https://omluminaamericas.github.io/L
 This script is maintained by the Lumina team. For suggestions or issues, please contact your IT administrator.
 
 ## License
-TBD
+Apache License
 
 ## Notes
 - The script source code is visible in Tampermonkey for transparency and customization, but it is intended for internal use only.

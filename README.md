@@ -26,15 +26,15 @@ To use this plugin enter the [Install Page](https://omluminaamericas.github.io/L
    - If the issue is an Epic, you should see a `✯` button to update story points.
 
 4. **Activate the Script in Tampermonkey** (If necessary):
-- After installing the script, open the Tampermonkey dashboard by clicking its icon in your browser's extensions bar.
-- In the list of scripts, make sure the **Lumina Jira Plugin** script is activated (it should be marked as "Enabled").
-- If the script is not activated, simply click the toggle next to the script name to activate it.
+   - After installing the script, open the Tampermonkey dashboard by clicking its icon in your browser's extensions bar.
+   - In the list of scripts, make sure the **Lumina Jira Plugin** script is activated (it should be marked as "Enabled").
+   - If the script is not activated, simply click the toggle next to the script name to activate it.
 
-4. **Enable Developer Mode (If Necessary)**:
+5. **Enable Developer Mode (If Necessary)**:
    - If Tampermonkey is not installing the script properly, try enabling **Developer Mode** in Chrome:
      1. Go to `chrome://extensions/`.
      2. Toggle **Developer mode** on.
-     3. Click **Load unpacked** and select the folder where the Tampermonkey script is located.
+     3. Recheck step 4
      This should not be necessary in most cases, but may help in rare situations.
 
 
@@ -54,10 +54,9 @@ To use this plugin enter the [Install Page](https://omluminaamericas.github.io/L
 
 ## Updating
 - When a new version is available, Tampermonkey will notify you. Click "Install" to update the script.
-- Check the `@version` in the script header to see the current version (e.g., 1.8).
 
 ## Contributing
-This script is maintained by the Lumina team. For suggestions or issues, please contact your IT administrator.
+This script is maintained by the Lumina team. For suggestions or issues, please contact Lumina Product Team.
 
 ## License
 Apache License

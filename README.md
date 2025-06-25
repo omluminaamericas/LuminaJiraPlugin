@@ -25,6 +25,19 @@ To use this plugin enter the [Install Page](https://omluminaamericas.github.io/L
    - If the "Estimation" tab is present, you should see a `⟳` button to refresh the estimation.
    - If the issue is an Epic, you should see a `✯` button to update story points.
 
+4. **Activate the Script in Tampermonkey** (If necessary):
+- After installing the script, open the Tampermonkey dashboard by clicking its icon in your browser's extensions bar.
+- In the list of scripts, make sure the **Lumina Jira Plugin** script is activated (it should be marked as "Enabled").
+- If the script is not activated, simply click the toggle next to the script name to activate it.
+
+4. **Enable Developer Mode (If Necessary)**:
+   - If Tampermonkey is not installing the script properly, try enabling **Developer Mode** in Chrome:
+     1. Go to `chrome://extensions/`.
+     2. Toggle **Developer mode** on.
+     3. Click **Load unpacked** and select the folder where the Tampermonkey script is located.
+     This should not be necessary in most cases, but may help in rare situations.
+
+
 ## Features
 - **Refresh Estimation**: Quickly updates the estimation for the current Jira issue.
 - **Update Story Points**: Calculates and updates the total story points in an Epic via a webhook.

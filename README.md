@@ -8,7 +8,7 @@ The **Lumina Jira Plugin** adds two icons to the Jira issue view:
 - A button to update the total story points in an Epic via a webhook (visible only for Epic issue types).
 
 ## Installation
-To use this plugin, follow these steps:
+To use this plugin enter the [Install Page](https://omluminaamericas.github.io/LuminaJiraPlugin/install.html) or follow these steps:
 
 1. **Install Tampermonkey**:
    - If you don't have Tampermonkey installed, get it from:
@@ -21,7 +21,7 @@ To use this plugin, follow these steps:
    - Tampermonkey will prompt you to install the script. Click "Install".
 
 3. **Verify Installation**:
-   - Open a Jira issue page (e.g., `https://luminaamericas.atlassian.net/browse/LUMINA-1234`).
+   - Open a Jira issue page (e.g., `https://luminaamericas.atlassian.net/browse/LUMPRD-1234`).
    - If the "Estimation" tab is present, you should see a `⟳` button to refresh the estimation.
    - If the issue is an Epic, you should see a `✯` button to update story points.
 
@@ -50,5 +50,4 @@ This script is maintained by the Lumina team. For suggestions or issues, please 
 TBD
 
 ## Notes
-- Ensure the webhook URL and API endpoints (`ESTIMACION_API_URL` and `WEBHOOK_URL_BASE`) are correctly configured for your environment.
 - The script source code is visible in Tampermonkey for transparency and customization, but it is intended for internal use only.

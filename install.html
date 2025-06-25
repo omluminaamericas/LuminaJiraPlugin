@@ -5,18 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lumina Jira Plugin Installer</title>
     <style>
-        body { font-family: Arial, sans-serif; text-align: center; padding: 50px; }
-        .message { margin: 20px; }
-        .button { padding: 10px 20px; background-color: #36b37e; color: white; text-decoration: none; border-radius: 4px; margin: 5px; }
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+            margin: 0;
+            background-color: #f5f5f5;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .message {
+            margin: 20px 0;
+            line-height: 1.5;
+        }
+        .button {
+            display: block; /* Hace que cada botón ocupe su propia línea */
+            padding: 10px 20px;
+            margin: 10px auto; /* Centra y agrega espacio entre botones */
+            background-color: #36b37e;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            width: 250px; /* Ancho fijo para consistencia */
+            text-align: center;
+        }
+        .button:hover {
+            background-color: #2b8a60; /* Efecto hover para mejor UX */
+        }
     </style>
 </head>
 <body>
-    <h1>Lumina Jira Plugin Installer</h1>
-    <div class="message">
-        <p>Welcome to the Lumina Jira Plugin installer!</p>
-        <p>If you don't have Tampermonkey installed, please install it first by clicking the button below. Then, install the Lumina Jira Plugin.</p>
+    <div class="container">
+        <h1>Lumina Jira Plugin Installer</h1>
+        <div class="message">
+            <p>Welcome to the Lumina Jira Plugin installer!</p>
+            <p>If you don't have Tampermonkey installed, please install it first by clicking the button below. Then, install the Lumina Jira Plugin.</p>
+        </div>
         <a href="https://www.tampermonkey.net/?ext=dhdg&update=true" target="_blank" class="button">Install Tampermonkey</a>
-        <br>
         <a href="https://raw.githubusercontent.com/omluminaamericas/LuminaJiraPlugin/main/LuminaJiraPlugin.user.js" class="button">Install Lumina Jira Plugin</a>
     </div>
 </body>
